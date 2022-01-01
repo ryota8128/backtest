@@ -1,0 +1,6 @@
+altair==4.1.0
+numpy==1.21.1
+pandas==1.3.3
+streamlit==1.3.0
+yahoo_finance_api2==0.0.12
+
