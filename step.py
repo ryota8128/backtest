@@ -350,7 +350,7 @@ def step3(content1, content2, content3):
         win_rate = total_history["win_num"] / (total_history["win_num"] + total_history["lose_num"])
         ave_hold_period = sum(total_history["hold_period"]) / len(total_history["hold_period"])
 
-        total_PL_ratio = (cash / cash_init) - 1 
+        total_PL_ratio = (asset / cash_init) - 1 
         entry_num = total_history["entry_num"]
         st.write("平均損益率：{:.1f}%".format(ave_rate*100))
         st.write("勝率：{:.1f}%".format(win_rate*100))
@@ -373,7 +373,7 @@ def step3(content1, content2, content3):
         st.sidebar.write("""## グラフの範囲指定""")
         ymin, ymax = st.sidebar.slider(
             "範囲を指定してください",
-            0.0, 3.0, (0.7, 1.4),
+            0.0, 2.5, (0.8, 1.2),
         )
 
         chart = (
